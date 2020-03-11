@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th><a (click)="sid()">ID</a></th>
+    <th><a (click)="sname()">NAME</a></th>
+    <th><a (click)="ssal()">SALARY</a></th>
+    <th><a (click)="sdep()">DEPARTMENT</a></th>
+    <th>JOINING DATE</th>
+  </tr>
+  <tr *ngFor="let b of Emp">
+    <td>{{b.empid}}</td>
+    <td>{{b.empname}}</td>
+    <td>{{b.empsal}}</td>
+    <td>{{b.empdep}}</td>
+    <td>{{b.empjoiningdate}}</td>
+  </tr>
+</table>
